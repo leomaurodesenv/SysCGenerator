@@ -1,0 +1,30 @@
+.ufms-logo img, .ufms-logo{width:51mm;height:21mm;}
+.ufms-logo{position:fixed;bottom:5mm;right:6mm;}
+
+.body-border-bottom img, .body-border-bottom,
+.body-border img, .body-border{width:60mm;}
+.body-border{position:fixed;top:0;right:0;}
+.body-border-bottom{position:fixed;bottom:0;left:0;}
+
+
+.certificate-title img, .certificate-title{width:115mm;height:31mm;}
+.certificate-title{position:fixed;top:35mm;left:90mm;}
+
+.body-content{position:fixed;width:245mm;top:75mm;left:26mm;}
+
+.certificate-data, .certificate-data-name{font-weight:bold;}
+.certificate-data-name, .certificate-code{text-transform:uppercase;}
+
+/* 297 */
+body, div, p {font-size:14pt;text-align:justify;}
+
+.certificate-validate{
+position:fixed;height:18mm;width:160mm;bottom:6mm;left:70mm;
+border:1px solid black;
+background:#dbdbdb;
+padding:1mm;
+font-size:11pt;}
+.certificate-validate{padding-top:0;margin-top:0;}
+
+.boss-sign{position:fixed;width:45mm;top:120mm;left:206mm;}
+.text{font-size:11pt;font-style:italic;text-align:center;}
