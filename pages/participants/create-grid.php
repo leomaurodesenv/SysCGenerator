@@ -28,7 +28,7 @@ $alert->add_alerts(array('type'=>'info', 'text'=>'Ocorreu algum problema..!', 'i
 $alert->generate_alerts();
 
 $form = new FPHP_page_forms(array('action'=>'#', 'method'=>'get', 'name'=>'7_sgc_participants', 'id'=>'fphp_form_create_grid', 'button'=>'Adicionar'));
-$form->add_input(array('type'=>'select', 'id'=>'input_1', 'name'=>'input_1', 'label'=>'Evento', 'data_diff'=>'SELECT * FROM `7_sgc_event` WHERE `active`=\'1\'', 'data_diff_info'=>array('id', 'name'), 'data'=>array('validate'=>json_encode(['required'=>true]), 'field'=>'id_event')));
+$form->add_input(array('type'=>'select', 'id'=>'input_1', 'name'=>'input_1', 'label'=>'Evento', 'data_diff'=>'SELECT * FROM `7_sgc_event` WHERE `active`=\'1\' AND `id_user`=\''.$_SESSION['user']['id'].'\'', 'data_diff_info'=>array('id', 'name'), 'data'=>array('validate'=>json_encode(['required'=>true]), 'field'=>'id_event')));
 $form->add_input(array('type'=>'text', 'id'=>'input_2', 'name'=>'input_2', 'label'=>'Nome Completo', 'placeholder'=>'Nome Completo', 'maxlength'=>100, 'data'=>array('validate'=>json_encode(['required'=>true]), 'field'=>'name_partp')));
 $form->add_input(array('type'=>'text', 'id'=>'input_3', 'name'=>'input_3', 'label'=>'E-mail', 'placeholder'=>'E-mail', 'maxlength'=>200, 'data'=>array('validate'=>json_encode(['email'=>true]), 'field'=>'email_partp')));
 $form->add_input(array('type'=>'text', 'id'=>'input_4', 'name'=>'input_4', 'label'=>'CPF', 'placeholder'=>'CPF', 'maxlength'=>20, 'data'=>array('field'=>'cpf_partp')));

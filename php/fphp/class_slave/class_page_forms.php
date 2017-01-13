@@ -115,7 +115,7 @@ class FPHP_page_forms extends FPHP_master{
 				$out = '<select id="'.$val['id'].'" name="'.$val['name'].'" class="'.$this->style['select'].' '.$val['add_class'].'" '.$data.' '.$val['disabled'].'>';
 				$resp = $this->make_select_diff($val['data_diff']);
 
-				foreach ($resp as $k1 => $v1){
+				if(is_array($resp)) foreach ($resp as $k1 => $v1){
 					$value_selec = $v1[$val['data_diff_info'][0]];
 					if($selected_code == $value_selec) $selected = 'selected="selected"';
 					else $selected = '';
