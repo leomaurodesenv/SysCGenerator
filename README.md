@@ -27,7 +27,7 @@ Veja este exemplo funcional que está sendo utilizado pelo grupo PET Fronteira d
    
    
 ## Also look ~  	
-* [License GPL v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)   
-* Create by Leonardo Mauro (leo.mauro.desenv@gmail.com)   
-* Git: [leomaurodesenv](https://github.com/leomaurodesenv/)   
-* Site: [Portfolio](http://leonardomauro.com/portfolio/)   
+- [License GPL v3](LICENSE)
+- Create by Leonardo Mauro (leo.mauro.desenv@gmail.com)
+- Git: [leomaurodesenv](https://github.com/leomaurodesenv/)
+- Site: [Portfolio](http://leonardomauro.com/portfolio/)
